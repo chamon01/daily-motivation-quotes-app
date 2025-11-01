@@ -13,8 +13,8 @@ A full-stack web application that displays random motivational quotes. Built for
 
 ## Project Links
 
-- [Jira Board](https://your-jira-link-here)
-- [Confluence Documentation](https://your-confluence-link-here)
+- [Jira Board](https://dailymotivationapp.atlassian.net/jira/software/projects/CRM/boards/1)
+- [Confluence Documentation](https://dailymotivationsapp.atlassian.net/wiki/x/HIEE)
 
 ## Setup Instructions
 
