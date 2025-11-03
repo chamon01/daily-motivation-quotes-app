@@ -14,7 +14,7 @@ A full-stack web application that displays random motivational quotes. Built for
 ## Project Links
 
 - [Jira Board](https://dailymotivationsapp.atlassian.net/jira/software/projects/CRM/list?atlOrigin=eyJpIjoiNjMyYTVkZTMxYmJkNDBmMWE5NDRjZTU1OGNkMjQyMmYiLCJwIjoiaiJ9)
-- [Confluence Documentation](https://dailymotivationsapp.atlassian.net/wiki/x/HIEE)
+- [Confluence Documentation](https://dailymotivationsapp.atlassian.net/wiki/external/ZTI1ODRkZjFlNjg4NDhmYzkxMGFjOWI2NzE2NGI0MGY)
 
 ## Setup Instructions
 
