@@ -32,6 +32,30 @@ app.get('/quotes', (req, res) => {
   }
 });
 
+app.post('/quotes', (req, res) => {
+  try {
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    res.json({ quote: randomQuote });
+  } catch (error) {
+    console.error('Error posting quote:', error);
+    res.status(500).json({ error: 'Failed to get quote' });
+  }
+});
+
+app.post('/favorites', (req, res) => {
+  try {
+    // Stub endpoint - just return success for MVP
+    res.json({ 
+      success: true, 
+      message: 'Quote added to favorites',
+      favorite: req.body 
+    });
+  } catch (error) {
+    console.error('Error adding favorite:', error);
+    res.status(500).json({ error: 'Failed to add favorite' });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
