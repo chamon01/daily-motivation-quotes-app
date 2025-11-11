@@ -236,16 +236,10 @@ PORT=8080
 - **ChatGPT**: Architecture and documentation
 - **VS Code**: IDE
 
-## Future Enhancements
+## Future Features
 
-- [ ] User authentication
 - [ ] Favorite quotes per user
 - [ ] Community quote submissions
-- [ ] Multi-language support
-- [ ] Email daily quotes
-- [ ] Mobile app (React Native)
-- [ ] Analytics dashboard
-- [ ] Quote filtering and search
 
 ## Assignment Requirements Met
 
