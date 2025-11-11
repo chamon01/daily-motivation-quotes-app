@@ -29,7 +29,7 @@ This project demonstrates a complete full-stack development workflow including f
 
 - **Deployed Backend**: https://daily-motivation-quotes-app-156796309307.us-central1.run.app
 
-- [Jira Board](https://dailymotivationsapp.atlassian.net/jira/software/projects/CRM/list?atlOrigin=eyJpIjoiNjMyYTVkZTMxYmJkNDBmMWE5NDRjZTU1OGNkMjQyMmYiLCJwIjo[...]  
+- **Jira Board**:(https://dailymotivationsapp.atlassian.net/jira/software/projects/CRM/list?atlOrigin=eyJpIjoiNjMyYTVkZTMxYmJkNDBmMWE5NDRjZTU1OGNkMjQyMmYiLCJwIjo[...]  
 
 - [Confluence Documentation](https://dailymotivationsapp.atlassian.net/wiki/external/ZTI1ODRkZjFlNjg4NDhmYzkxMGFjOWI2NzE2NGI0MGY)
 
