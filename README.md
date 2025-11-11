@@ -8,14 +8,8 @@ A full-stack web application that displays random motivational quotes with a cle
 
 ## 🛠️ Tech Stack
 
-| Component | Technology |
-|-----------|-----------|
-| **Frontend** | React 18.2 + TypeScript, Vite 4.5 |
-| **Backend** | Node.js 18, Express.js 4.18 |
-| **Database** | MongoDB with Mongoose (optional) |
-| **Containerization** | Docker (multi-stage build) |
-| **Deployment** | Google Cloud Run |
-| **CI/CD** | GitHub Actions |
+- [Jira Board](https://dailymotivationsapp.atlassian.net/jira/software/projects/CRM/list?atlOrigin=eyJpIjoiNjMyYTVkZTMxYmJkNDBmMWE5NDRjZTU1OGNkMjQyMmYiLCJwIjoiaiJ9)
+- [Confluence Documentation](https://dailymotivationsapp.atlassian.net/wiki/external/ZTI1ODRkZjFlNjg4NDhmYzkxMGFjOWI2NzE2NGI0MGY)
 
 ---
 
