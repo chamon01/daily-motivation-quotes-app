@@ -3,11 +3,14 @@ import axios from 'axios'
 import './App.css'
 
 interface QuoteResponse {
-  quote: string;
+  text: string;
+  author?: string;
+  _id?: string;
 }
 
 function App() {
   const [quote, setQuote] = useState<string>('Loading...')
+  const [author, setAuthor] = useState<string>('')
   const [error, setError] = useState<string>('')
 
   const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'
@@ -17,7 +20,8 @@ function App() {
       setError('')
       // Use full URL from environment variable
       const response = await axios.get<QuoteResponse>(`${apiUrl}/quotes`)
-      setQuote(response.data.quote)
+      setQuote(response.data.text)
+      setAuthor(response.data.author || 'Unknown')
     } catch (error) {
       console.error('Error fetching quote:', error)
       setQuote('')
@@ -36,7 +40,10 @@ function App() {
         {error ? (
           <p className="error">{error}</p>
         ) : (
-          <p className="quote">{quote}</p>
+          <>
+            <p className="quote">{quote}</p>
+            {author && <p className="author">— {author}</p>}
+          </>
         )}
       </div>
       <button onClick={fetchQuote}>New Quote</button>
