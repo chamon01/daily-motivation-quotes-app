@@ -7,15 +7,21 @@ interface QuoteResponse {
 }
 
 function App() {
-  const [quote, setQuote] = useState<string>('')
+  const [quote, setQuote] = useState<string>('Loading...')
+  const [error, setError] = useState<string>('')
+
+  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:3000'
 
   const fetchQuote = async () => {
     try {
-      const response = await axios.get<QuoteResponse>('/api/quotes')
+      setError('')
+      // Use full URL from environment variable
+      const response = await axios.get<QuoteResponse>(`${apiUrl}/quotes`)
       setQuote(response.data.quote)
     } catch (error) {
       console.error('Error fetching quote:', error)
-      setQuote('Failed to fetch quote. Please try again.')
+      setQuote('')
+      setError('Failed to fetch quote. Make sure the backend is running.')
     }
   }
 
@@ -27,7 +33,11 @@ function App() {
     <div className="app">
       <h1>Daily Motivation Quotes</h1>
       <div className="quote-container">
-        <p className="quote">{quote}</p>
+        {error ? (
+          <p className="error">{error}</p>
+        ) : (
+          <p className="quote">{quote}</p>
+        )}
       </div>
       <button onClick={fetchQuote}>New Quote</button>
     </div>

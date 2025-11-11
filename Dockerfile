@@ -13,15 +13,17 @@ COPY backend/package*.json ./
 RUN npm install
 COPY backend/ ./
 
-# Production stage
+# Production stage - serves backend with frontend build
 FROM node:18-slim
 WORKDIR /app
 
 # Copy backend
 COPY --from=backend-build /app/backend ./backend
 # Copy frontend build
-COPY --from=frontend-build /app/frontend/dist ./frontend/dist
+COPY --from=frontend-build /app/frontend/dist ./public
 
 WORKDIR /app/backend
-EXPOSE 3000
+# Cloud Run requires listening on PORT env var (default 8080)
+EXPOSE 8080
+ENV PORT=8080
 CMD ["npm", "start"]
