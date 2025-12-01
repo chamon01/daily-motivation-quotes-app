@@ -1,0 +1,12 @@
+name: Cloud Run (disabled)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disabled
+        run: |
+          echo "This workflow is intentionally disabled. Use manual deploy steps documented in README."
